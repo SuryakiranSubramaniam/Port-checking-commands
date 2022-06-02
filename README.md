@@ -70,5 +70,5 @@ telnet: Unable to connect to remote host: Connection refused
 Aspire-A315-55G:~$ 
 
 ```
-
+From this we can understand that port **80** is open and port **443** is not open
 
