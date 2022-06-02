@@ -53,7 +53,7 @@ tcp6       0      0 :::80                   :::*                    LISTEN      
 
 ### Command for Checking If a particular port is open or not from an other mechine
 
->telnet <Public IP> <port number>
+Syntax : `telnet <Public IP> <port number>`
 
 ```
   
