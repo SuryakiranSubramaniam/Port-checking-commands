@@ -67,7 +67,14 @@ sshd    1471    root    3u  IPv4  12683      0t0  TCP *:ssh (LISTEN)
 sshd    1471    root    4u  IPv6  12685      0t0  TCP *:ssh (LISTEN)
 
 ```
-
+#### Run any one of the following command on Linux to see open ports:
+```
+sudo lsof -i -P -n | grep LISTEN
+sudo netstat -tulpn | grep LISTEN
+sudo ss -tulpn | grep LISTEN
+sudo lsof -i:22 ## see a specific port such as 22 ##
+sudo nmap -sTU -O IP-address-Here  ## For Debian or Ubuntu Linux based system
+```
 
 ## telnet
 
