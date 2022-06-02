@@ -50,6 +50,25 @@ tcp6       0      0 :::80                   :::*                    LISTEN      
 
 ```
 
+## lsof
+
+We can do the same by using **lsof** command
+
+Linux/Unix consider everything as file and maintains folder. So “Files or a File ” is very important in Linux/Unix. While working in Linux/Unix system there might be several file and folder which are being used, some of them would be visible and some not. 
+lsof command stands for List Of Open File. This command provides a list of files that are opened. Basically, it gives the information to find out the files which are opened by which process. With one go it lists out all open files in output console. It cannot only list common regular files but it can list a directory, a block special file, a shared library, a character special file, a regular pipe, a named pipe, an internet socket, a UNIX domain socket, and many others. it can be combined with grep command can be used to do advanced searching and listing. 
+
+Syntax: `$lsof [option][user name]`
+
+```
+# lsof -i TCP:22
+
+COMMAND  PID    USER   FD   TYPE DEVICE SIZE/OFF NODE NAME
+sshd    1471    root    3u  IPv4  12683      0t0  TCP *:ssh (LISTEN)
+sshd    1471    root    4u  IPv6  12685      0t0  TCP *:ssh (LISTEN)
+
+```
+
+
 ## telnet
 
 ### Command for Checking If a particular port is open or not from an other mechine
