@@ -21,6 +21,7 @@ tcp6       0      0 :::111                  :::*                    LISTEN      
 We are going to install httpd
 
 > [root@ip-172-31-45-113 ~]#yum install httpd -y
+
 > [root@ip-172-31-45-113 ~]# systemctl start httpd.service 
 
 
